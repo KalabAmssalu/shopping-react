@@ -4,7 +4,7 @@ export const fetchData = () => {
     return async(dispatch) => {
         const fetchHandler = async() => {
             const res = await fetch('https://shoppingdbs-6c77c-default-rtdb.firebaseio.com/cartitems.json')
-            const data = await res.json();
+            const data = await res.json(); 
             return data;
         }
         try{
