@@ -3,7 +3,7 @@ import { uiActions } from "./ui-slice"
 export const fetchData = () => {
     return async(dispatch) => {
         const fetchHandler = async() => {
-            const res = await fetch('https://shopping-react-7a674-default-rtdb.firebaseio.com/cartitems.json')
+            const res = await fetch('https://shopping-react-7a674-default-rtdb.firebaseio.com/cartItems.json')
             const data = await res.json();
             return data;
         }
