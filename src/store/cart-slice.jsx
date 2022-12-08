@@ -15,7 +15,7 @@ const cartSlice = createSlice({
         addToCart(state, action){
             state.changed = true;
             const newItem = action.payload;
-            // to check if item is already a  vailable
+            // to check if item is already a vailable
             const existingItem = state.itemsList.find((item) => item.id === newItem.id);
 
             if(existingItem){
