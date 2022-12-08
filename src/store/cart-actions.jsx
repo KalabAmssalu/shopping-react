@@ -20,8 +20,6 @@ export const fetchData=()=>{
             type:'error',
           }))
     }
-
-
     }
 }
 
